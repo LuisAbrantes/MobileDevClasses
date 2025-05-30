@@ -37,6 +37,73 @@ void main() {
                   color: Colors.pink,
                 ),
               ),
+
+              // Exemplos de TextAlign
+              const Padding(
+                padding: EdgeInsets.only(top: 20, bottom: 10),
+                child: Text(
+                  "Exemplos de TextAlign",
+                  style: TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blue,
+                  ),
+                ),
+              ),
+
+              // TextAlign.left
+              Container(
+                width: double.infinity,
+                padding: const EdgeInsets.all(8),
+                color: Colors.grey[200],
+                child: const Text(
+                  "TextAlign.left - Este texto está alinhado à esquerda. Este é o alinhamento padrão para textos em Flutter.",
+                  textAlign: TextAlign.left,
+                  style: TextStyle(fontSize: 16),
+                ),
+              ),
+
+              const SizedBox(height: 10),
+
+              // TextAlign.center
+              Container(
+                width: double.infinity,
+                padding: const EdgeInsets.all(8),
+                color: Colors.grey[200],
+                child: const Text(
+                  "TextAlign.center - Este texto está centralizado. Útil para títulos e textos importantes.",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 16),
+                ),
+              ),
+
+              const SizedBox(height: 10),
+
+              // TextAlign.right
+              Container(
+                width: double.infinity,
+                padding: const EdgeInsets.all(8),
+                color: Colors.grey[200],
+                child: const Text(
+                  "TextAlign.right - Este texto está alinhado à direita. Bom para valores numéricos ou datas.",
+                  textAlign: TextAlign.right,
+                  style: TextStyle(fontSize: 16),
+                ),
+              ),
+
+              const SizedBox(height: 10),
+
+              // TextAlign.justify
+              Container(
+                width: double.infinity,
+                padding: const EdgeInsets.all(8),
+                color: Colors.grey[200],
+                child: const Text(
+                  "TextAlign.justify - Este texto está justificado. Útil para parágrafos longos de texto onde você quer que ambas as bordas estejam alinhadas. O texto é distribuído para preencher a largura disponível.",
+                  textAlign: TextAlign.justify,
+                  style: TextStyle(fontSize: 16),
+                ),
+              ),
               const SizedBox(height: 20),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
